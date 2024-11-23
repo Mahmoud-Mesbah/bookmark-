@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+<div class="d-flex justify-content-center align-items-center">
+    <h1 class=" my-5 title position-relative">Bookmarker</h1>
+</div>
+        
+
+
+
+        <div class="inputs py-4 ">
+            <h2 class="text-center my-3"><i class=" fa-solid fa-bookmark "></i> Bookmark your favorite sites <i
+                    class=" fa-solid fa-bookmark "></i></h2>
+            <div class="mb-3">
+                <label for="name" class="form-label fw-semibold"><i class=" fa-solid fa-bookmark pe-2"></i> Site
+                    Name</label>
+                <input type="text" class="form-control bg-light" id="name" placeholder="Bookmark Name">
+            </div>
+            <div class="mb-3">
+                <label for="url" class="form-label fw-semibold"><i class=" fa-solid fa-link pe-2"></i>Site URL</label>
+                <input type="text" class="form-control bg-light" id="url" placeholder="Wibsite URL">
+            </div>
+            <div class="event text-center pt-3">
+                <button onclick="addBook()" class="btn btn-warning  px-5 py-2 text-white">Submit</button>
+            </div>
+        </div>
+
+
+        <div class="output my-4">
+            <table class="table bg-light text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website Name</th>
+                        <th scope="col">Visit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="bookOutput">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>
